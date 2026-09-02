@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 <div class="preloader" id = "preloader" aria-hidden="true">
@@ -23,7 +24,52 @@
 <div class = "cursor_ring" id = "cursorring" aria-hidden = "true">
     <span id = "cursorlabel"></span>
 </div>
-<div id="site-header"></div>
+<header class="header" id="header">
+    <div class="header_liquid" aria-hidden="true">
+        <svg class="liquid_svg" viewBox="0 0 1200 90" preserveAspectRatio="none">
+            <path class="liquid_path" d="M0 63 C160 54 220 69 350 58 S570 43 690 59 S930 70 1200 48" />
+        </svg>
+        <span class="liquid_drop"></span>
+        <span class="steam steam_one"></span>
+        <span class="steam steam_two"></span>
+    </div>
+    <div class="header_container">
+        <a href="index.html" class="header_logo">
+            <img src="coffee-beans.png" alt="Brew Logo">
+            <span class="logo_text">BREW</span>
+        </a>
+        <nav class="header_nav" id="headernav" aria-label="Primary navigation">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="index.html" class="nav_link active" aria-current="page">Home</a></li>
+                <li class="nav_item"><a href="shop.html" class="nav_link" data-ritual="bean">Shop</a></li>
+                <li class="nav_item"><a href="shop.html" class="nav_link" data-ritual="bean">Menu</a></li>
+                <li class="nav_item"><a href="shop.html" class="nav_link" data-ritual="bean">Our Coffee / Journey</a></li>
+                <li class="nav_item"><a href="shop.html" class="nav_link" data-ritual="bean">Offers</a></li>
+                <li class="nav_item"><a href="shop.html" class="nav_link" data-ritual="bean">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header_actions">
+            <a class="icon_btn search_btn" href="search.html" aria-label="Search">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="6.5"></circle>
+                <path d="m16 16 4.5 4.5"></path>
+                </svg>
+             </a>
+             <a href="shop.html" class="cart_btn" aria-label="Cart">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M6 8h12l1 13H5L6 8Z"></path>
+                    <path d="M9 8a3 3 0 0 1 6 0"></path>
+                 </svg>
+                 <span class="cart_count">0</span>
+             </a>
+             <a href="menu.html" class="header_cta">Explore Coffee <span aria-hidden="true">↗</span></a>
+             <button class="nav_toggle" id="navtoggle" type="button" aria-label="Open navigation" aria-controls="headernav" aria-expanded="false">
+                <span class="bar"></span><span class="bar"></span>
+             </button>
+        </div>
+    </div>
+    <p class="mobile _ritual" aria-hidden="true">brew</p>
+</header>
 <main id="main">
 <section class = "hero" id = "hero">
     <div class = "heromedia">
